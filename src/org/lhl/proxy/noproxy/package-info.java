@@ -11,8 +11,12 @@
  * 由于以上一点：在代理类的Class对象上调用<code>getInterfaces()</code>得到同创建类时相同的接口数组，顺序也于创建时相同</br>
  * 每个代理类都有个公开的构造器，构造器有个InvocationHandler参数，为代理对象设置代理处理器</br>
  * </br>
- * 动态代理使用： Invocation Handler</br>
- * @author carl
+ * 动态代理使用：</br>
+ * 1. 实现 InvocationHandler 接口创建自己的调用处理器</br>
+ * 2. 为 Proxy 类指定 ClassLoader 对象和一组 interface 来创建动态代理类；</br>
+ * 3. 通过反射机制获得动态代理类的构造函数，其唯一参数类型是调用处理器接口类型；</br>
+ * 4. 通过构造函数创建动态代理类实例，构造时调用处理器对象作为参数被传入</br>
+ *   @author carl
  *
  */
 package org.lhl.proxy.noproxy;
