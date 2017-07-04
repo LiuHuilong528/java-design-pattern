@@ -1,6 +1,8 @@
 package org.lhl.factory.factorymethod;
+
 /**
  * 具体工厂类：文件日志记录器工厂
+ * 
  * @author datatoucher
  *
  */
