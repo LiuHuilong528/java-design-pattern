@@ -5,8 +5,6 @@ package org.lhl.factory.factorymethod;
  *
  */
 
-import javax.xml.parsers.DocumentBuilderFactory;
-
 public class DatabaseLoggerFactory implements LoggerFactory {
 
 	@Override
@@ -15,6 +13,5 @@ public class DatabaseLoggerFactory implements LoggerFactory {
 		Logger log = new DatabaseLogger();
 		return log;
 	}
-	DocumentBuilderFactory dbf;
 
 }
